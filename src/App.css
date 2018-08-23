@@ -1,0 +1,13 @@
+.App {
+  margin: 0 20%;
+  padding: 20px;
+  padding-top: 0px;
+  border-left: 10px solid lightgray;
+  border-right: 10px solid lightgray;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
