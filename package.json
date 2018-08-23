@@ -2,16 +2,20 @@
   "name": "rlpt-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://boweihan.github.io/rlpt-example",
   "dependencies": {
     "@material-ui/icons": "^2.0.3",
     "babel-polyfill": "^6.26.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-lazy-paginated-tree": "^0.3.2",
+    "react-lazy-paginated-tree": "^0.3.5",
     "react-scripts": "1.1.5",
     "react-syntax-highlighter": "^8.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
