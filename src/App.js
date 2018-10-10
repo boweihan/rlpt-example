@@ -89,6 +89,7 @@ import { Tree, SampleTree, minimalTheme } from 'react-lazy-paginated-tree';
 const TreeComponent = () => (
     <Tree
         nodes={SampleTree}
+        useLocalState={true}
     />
 );
 
@@ -118,6 +119,7 @@ const TreeComponent = () => (
   <Tree
       nodes={SampleTree}
       theme={minimalTheme}
+      useLocalState={true}
   />
 );
 
@@ -144,6 +146,7 @@ const TreeComponent = () => (
 <Tree
     nodes={SampleTree}
     loadChildren={loadChildren}
+    useLocalState={true}
 />
 );
 
@@ -162,7 +165,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           <Tree
             nodes={JSON.parse(JSON.stringify(LazyPaginatedSample))}
             loadChildren={loadChildrenPaginated}
-            pageLimit={5}
+            pageLimit={800}
           />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
@@ -175,6 +178,7 @@ const TreeComponent = () => (
   nodes={SampleTree}
   loadChildren={loadChildrenPaginated}
   pageLimit={5}
+  useLocalState={true}
 />
 );
 
@@ -193,7 +197,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           <Tree
             nodes={JSON.parse(JSON.stringify(LazyPaginatedSample))}
             loadChildren={loadChildrenPaginated}
-            pageLimit={5}
+            pageLimit={800}
             theme={minimalTheme}
           />
         ) : (
@@ -208,6 +212,7 @@ const TreeComponent = () => (
   loadChildren={loadChildrenPaginated}
   pageLimit={5}
   theme={minimalTheme}
+  useLocalState={true}
 />
 );
 
