@@ -165,7 +165,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           <Tree
             nodes={JSON.parse(JSON.stringify(LazyPaginatedSample))}
             loadChildren={loadChildrenPaginated}
-            pageLimit={800}
+            pageLimit={10}
           />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
@@ -197,7 +197,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           <Tree
             nodes={JSON.parse(JSON.stringify(LazyPaginatedSample))}
             loadChildren={loadChildrenPaginated}
-            pageLimit={800}
+            pageLimit={10}
             theme={minimalTheme}
           />
         ) : (
