@@ -7,8 +7,8 @@
     "@material-ui/icons": "^2.0.3",
     "babel-polyfill": "^6.26.0",
     "gh-pages": "^1.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-lazy-paginated-tree": "^0.6.2",
     "react-scripts": "1.1.5",
     "react-syntax-highlighter": "^8.0.1"
