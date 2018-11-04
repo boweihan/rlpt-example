@@ -9,7 +9,7 @@
     "gh-pages": "^1.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-lazy-paginated-tree": "^0.6.3",
+    "react-lazy-paginated-tree": "^0.6.8",
     "react-scripts": "1.1.5",
     "react-syntax-highlighter": "^8.0.1"
   },

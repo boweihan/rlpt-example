@@ -79,7 +79,7 @@ class App extends Component {
           />
         </h2>
         {!showCode1 ? (
-          <Tree nodes={JSON.parse(JSON.stringify(SampleTree))} />
+          <Tree nodes={JSON.parse(JSON.stringify(SampleTree))} useLocalState />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
             {`import React from 'react';
@@ -89,7 +89,7 @@ import { Tree, SampleTree, minimalTheme } from 'react-lazy-paginated-tree';
 const TreeComponent = () => (
     <Tree
         nodes={SampleTree}
-        useLocalState={true}
+        useLocalState
     />
 );
 
@@ -108,6 +108,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           <Tree
             nodes={JSON.parse(JSON.stringify(SampleTree))}
             theme={minimalTheme}
+            useLocalState
           />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
@@ -119,7 +120,7 @@ const TreeComponent = () => (
   <Tree
       nodes={SampleTree}
       theme={minimalTheme}
-      useLocalState={true}
+      useLocalState
   />
 );
 
@@ -135,7 +136,7 @@ ReactDOM.render(<TreeComponent />, content);`}
           />
         </h2>
         {!showCode3 ? (
-          <Tree nodes={LazySample} loadChildren={loadChildren} />
+          <Tree nodes={LazySample} loadChildren={loadChildren} useLocalState />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
             {`import React from 'react';
@@ -146,7 +147,7 @@ const TreeComponent = () => (
 <Tree
     nodes={SampleTree}
     loadChildren={loadChildren}
-    useLocalState={true}
+    useLocalState
 />
 );
 
@@ -166,6 +167,8 @@ ReactDOM.render(<TreeComponent />, content);`}
             nodes={JSON.parse(JSON.stringify(LazyPaginatedSample))}
             loadChildren={loadChildrenPaginated}
             pageLimit={10}
+            paginated
+            useLocalState
           />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
@@ -177,8 +180,9 @@ const TreeComponent = () => (
 <Tree
   nodes={SampleTree}
   loadChildren={loadChildrenPaginated}
-  pageLimit={5}
-  useLocalState={true}
+  pageLimit={10}
+  paginated
+  useLocalState
 />
 );
 
@@ -199,6 +203,8 @@ ReactDOM.render(<TreeComponent />, content);`}
             loadChildren={loadChildrenPaginated}
             pageLimit={10}
             theme={minimalTheme}
+            paginated
+            useLocalState
           />
         ) : (
           <SyntaxHighlighter language="jsx" style={prism}>
@@ -210,9 +216,10 @@ const TreeComponent = () => (
 <Tree
   nodes={SampleTree}
   loadChildren={loadChildrenPaginated}
-  pageLimit={5}
+  pageLimit={10}
   theme={minimalTheme}
-  useLocalState={true}
+  paginated
+  useLocalState
 />
 );
 
